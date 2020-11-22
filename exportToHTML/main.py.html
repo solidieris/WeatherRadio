@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6a8759;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">tkinter </span><span class="s0">as </span><span class="s1">tk</span>
+<span class="s0">from </span><span class="s1">PIL </span><span class="s0">import </span><span class="s1">ImageTk</span><span class="s0">, </span><span class="s1">Image</span>
+
+<span class="s0">def </span><span class="s1">test_funkcija(entry):</span>
+     <span class="s1">print(</span><span class="s2">&quot;Cia yra testas:&quot;</span><span class="s0">, </span><span class="s1">entry)</span>
+
+
+
+<span class="s1">root = tk.Tk()</span>
+
+<span class="s1">root.geometry(</span><span class="s2">&quot;500x400&quot;</span><span class="s1">)</span>
+<span class="s1">path=</span><span class="s2">'C:</span><span class="s3">\Users</span><span class="s2">\Ernestas\PycharmProjects\pythonProject7</span><span class="s0">\v</span><span class="s2">env\orai'</span>
+
+<span class="s1">background_image=tk.PhotoImage(Image.open(path))</span>
+<span class="s1">background_label=tk.Label(root</span><span class="s0">, </span><span class="s1">image=background_image)</span>
+<span class="s1">background_label.place(relhight=</span><span class="s4">1</span><span class="s0">, </span><span class="s1">relwidth=</span><span class="s4">1</span><span class="s1">)</span>
+
+<span class="s1">frame = tk.Frame(root</span><span class="s0">, </span><span class="s1">bg=</span><span class="s2">'#23ae1d'</span><span class="s0">,</span><span class="s1">bd=</span><span class="s2">'5'</span><span class="s1">)</span>
+<span class="s1">frame.place(relx=</span><span class="s4">0.5</span><span class="s0">, </span><span class="s1">rely=</span><span class="s4">0.1</span><span class="s0">, </span><span class="s1">relwidth=</span><span class="s4">0.75</span><span class="s0">, </span><span class="s1">relheight=</span><span class="s4">0.1</span><span class="s0">,</span><span class="s1">anchor=</span><span class="s2">'n'</span><span class="s1">)</span>
+
+<span class="s1">lower_frame= tk.Frame(root</span><span class="s0">, </span><span class="s1">bg=</span><span class="s2">'#23ae1d'</span><span class="s0">,</span><span class="s1">bd=</span><span class="s2">'10'</span><span class="s1">)</span>
+<span class="s1">lower_frame.place(relx=</span><span class="s4">0.5</span><span class="s0">, </span><span class="s1">rely=</span><span class="s4">0.25</span><span class="s0">, </span><span class="s1">relwidth=</span><span class="s4">0.75</span><span class="s0">, </span><span class="s1">relheight=</span><span class="s4">0.6</span><span class="s0">, </span><span class="s1">anchor =</span><span class="s2">'n'</span><span class="s1">)</span>
+
+<span class="s1">entry = tk.Entry(frame</span><span class="s0">, </span><span class="s1">font=</span><span class="s2">'40'</span><span class="s1">)</span>
+<span class="s1">entry.place(relheight=</span><span class="s4">1</span><span class="s0">, </span><span class="s1">relwidth=</span><span class="s4">0.65</span><span class="s1">)</span>
+
+<span class="s1">button = tk.Button(frame</span><span class="s0">, </span><span class="s1">text=</span><span class="s2">&quot;Weather Check&quot; </span><span class="s0">, </span><span class="s1">bg=</span><span class="s2">&quot;#61b4a1&quot;</span><span class="s0">,</span><span class="s1">command=</span><span class="s0">lambda</span><span class="s1">: test_funkcija(entry.get()))</span>
+<span class="s1">button.place(relx=</span><span class="s4">0.7</span><span class="s0">, </span><span class="s1">relheight=</span><span class="s4">1</span><span class="s0">, </span><span class="s1">relwidth=</span><span class="s4">0.3</span><span class="s1">)</span>
+
+<span class="s1">label=tk.Label(lower_frame)</span>
+<span class="s1">label.place(relheight=</span><span class="s4">1</span><span class="s0">,</span><span class="s1">relwidth=</span><span class="s4">1</span><span class="s1">)</span>
+
+<span class="s1">root.title(</span><span class="s2">&quot;Weather Check 0.0001 version beta&quot;</span><span class="s1">)</span>
+<span class="s1">root.mainloop()</span>
+
+<span class="s0">def </span><span class="s1">paint(paint):</span>
+     <span class="s1">print(</span><span class="s2">&quot;Hello&quot;</span><span class="s1">)</span>
+
+
+</pre>
+</body>
+</html>

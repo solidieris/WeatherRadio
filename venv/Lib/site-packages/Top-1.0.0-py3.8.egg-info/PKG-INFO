@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: Top
+Version: 1.0.0
+Summary: DaYu message api of Ali
+Home-page: https://github.com/littlecodersh/Top
+Author: Ali
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: Top
+        ===
+        
+        DaYu message api of Ali
+        
+Keywords: message
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
